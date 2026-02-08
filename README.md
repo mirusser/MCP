@@ -25,8 +25,8 @@ with content:
 ```
 
 *NOTE:*
-Prefer `"command": ["dotnet", "run", "--project", "..."]` while iterating (no republish needed).
-Prefer `"command": ["/abs/path/to/publish/YourServer"]` for reliability when you want it stable.
+- Prefer `"command": ["dotnet", "run", "--project", "..."]` while iterating (no republish needed).
+- Prefer `"command": ["/abs/path/to/publish/YourServer"]` for reliability when you want it stable.
 
 Test it with command:
 ```bash
