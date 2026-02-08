@@ -1,7 +1,7 @@
 Playground repo to check out MCP
 
 To run local stdio MCP server in OpenCode,
-create a file: `~/.config/opencode/opencode.json`
+create/update a file: `~/.config/opencode/opencode.json`
 with content:
 ```json
 {
@@ -43,3 +43,24 @@ It seems that OpenCode doesn't fully support prompts discovery (yet), so there a
 [OpenCode Prompt config](https://opencode.ai/docs/commands/#prompt-config)
 
 Also, it seems that OpenCode doesn't support local resources (yet) and it requires http:, https: or s3: protocols
+
+---
+
+To run Streamable HTTP MCP Server in OpenCode,
+create/update a file: `~/.config/opencode/opencode.json`
+with content:
+
+```json
+{
+    "$schema": "https://opencode.ai/config.json",
+    "mcp": {
+        "streamable-http-geocoding-server": {
+            "type": "remote",
+            "url": "http://localhost:5157",
+            "enabled": true
+            // "headers": { "Authorization": "Bearer YOUR_TOKEN" }
+        }
+    }
+}
+
+```
