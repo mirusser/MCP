@@ -106,3 +106,4 @@ Desktop.ini
 secrets.json
 **/appsettings.*.local.json
 **/appsettings.local.json
+/src/MCPServers/StreamableHttpGeocodingServer/appsettings.Development.json
